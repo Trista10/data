@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge,chrome=1">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- 表單輸入input & label -->
+    <form action="">
+        <p>
+            <label for="name">姓名</label><br>
+            <input type="text" id="name" name="name" placeholder="請輸入姓名">
+        </p>
+        <p>
+            <label for="pass">密碼</label><br>
+            <input type="password" id="pass" name="pass" placeholder="請輸入密碼">
+        </p>
+        <!--  按鈕  -->
+        <input type="submit" value="下一步">
+    </form>
+
+    <h3>備註</h3>
+    <ul>
+        <li>form action 要送到哪隻程式去</li>
+        <li>使用label for要與input的id，使用相同名字</li>
+        <li>placeholder 輸入框提示文字</li>
+        <li>input type 的值</li>
+    </ul>
+
+    <hr>
+
+    <!-- 表單元素 checkbox & radio -->
+    <form action="">
+        <div>性別</div>
+        <!-- 相同name是單選  -->
+        <input type="radio" name="male" value="man">男生
+        <input type="radio" name="male" value="woman">女生
+
+        <div>興趣</div>
+        <!-- checkbox是多選  -->
+        <input type="checkbox" name="hobby" value="sing">唱歌
+        <input type="checkbox" name="hobby" value="swim">游泳
+    </form>
+    <h3>備註</h3>
+    <ul>
+        <li>value值不同，但name可以相同</li>
+    </ul>
+
+    <hr>
+
+    <!-- 表單元素select & textArea -->
+    <form action="">
+        <label for="like">下拉式選單</label>
+        <select id="like" name="like">
+            <option value="1900">喜歡</option>
+            <option value="1901">不喜歡</option>
+        </select>
+
+        <h4>內容</h4>
+        <textarea name="content" cols="30" rows="10"></textarea>
+    </form>
+
+    <h3>備註</h3>
+    <ul>
+        <li>label也可以跟select搭配使用</li>
+        <li>cols:代表多少字元，rows：代表幾行</li>
+    </ul>
+
+    <hr>
+    <!-- 基本的 HTML5 日期輸入功能用法 -->
+    <form action="">
+        <p>
+            <label for="birth01">生日</label>
+            <input type="date" id="birth01" name="birth01">
+        </p>
+        <p>
+            <label for="birth02">生日</label>
+            <input type="date" id="birth02" name="birth02" value="2014-09-09" min="2014-09-06" max="2014-09-18">
+        </p>
+
+    </form>
+    <h3>備註</h3>
+    <ul>
+        <li>min 最小日期</li>
+        <li>max 最大日期</li>
+    </ul>
+</body>
+
+</html>
