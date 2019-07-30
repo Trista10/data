@@ -6,6 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge,chrome=1">
     <title>Document</title>
+    <style>
+        .outline:focus {
+            border: 1px solid red;
+            outline: 0px;  /* 移除預設外框線 */
+        }
+    </style>
 </head>
 
 <body>
@@ -13,11 +19,11 @@
     <form action="">
         <p>
             <label for="name">姓名</label><br>
-            <input type="text" id="name" name="name" placeholder="請輸入姓名">
+            <input type="text" id="name" name="name" placeholder="請輸入姓名" class="outline">
         </p>
         <p>
             <label for="pass">密碼</label><br>
-            <input type="password" id="pass" name="pass" placeholder="請輸入密碼">
+            <input type="password" id="pass" name="pass" placeholder="請輸入密碼" class="outline">
         </p>
         <!--  按鈕  -->
         <input type="submit" value="下一步">
@@ -29,6 +35,8 @@
         <li>使用label for要與input的id，使用相同名字</li>
         <li>placeholder 輸入框提示文字</li>
         <li>input type 的值</li>
+        <li>選取輸入框時，框的顏色調整outline</li>
+        <li>focus 在手機時使用</li>
     </ul>
 
     <hr>
